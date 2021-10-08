@@ -26,8 +26,7 @@ namespace :treat do
     language = args.language || 'english'
     Treat::Core::Installer.install(language)
   end
-  
-  # Runs 1) the core library specs and 2) the 
+  # Runs 1) the core library specs and 2) the
   # worker specs for a) all languages (default) 
   # or b) a specific language (if specified).
   # Also outputs the coverage for the whole 
